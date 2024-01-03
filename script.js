@@ -9,7 +9,7 @@ document.getElementById('botonBusqueda').addEventListener('click', () => {
 });
 
 function fetchDatosClima(ciudad) {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`;
     
     fetch(url)
     .then(response => response.json())
